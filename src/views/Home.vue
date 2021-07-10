@@ -14,5 +14,8 @@
 .home {
   height: 100vh;
   background-color: red;
+  max-width: 1520px;
+  margin: auto;
+  margin-top: 15px;
 }
 </style>

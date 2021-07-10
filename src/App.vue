@@ -30,30 +30,32 @@ export default {
   }
   body {
     margin: initial;
-    /*font-family: Gilroy;*/
-    font-size: 16px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #F6F6F6;
   }
   #app {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    background-color: white;
-  }
-  /*@font-face {
-    font-family: Gilroy;
-    src: url('./assets/Gilroy-Bold.ttf');
-    font-weight: bold;
+    background-color: #F6F6F6;
   }
   @font-face {
-    font-family: Gilroy;
-    src: url('./assets/Gilroy-SemiBold.ttf');
-    font-weight: normal;
+    font-family: Montserrat;
+    src: url('./assets/Montserrat-Regular.ttf');
+    font-weight: 400;
   }
   @font-face {
-    font-family: Gilroy;
-    src: url('./assets/Gilroy-Medium.ttf');
+    font-family: Montserrat;
+    src: url('./assets/Montserrat-Medium.ttf');
     font-weight: 500;
-  }*/
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url('./assets/Montserrat-SemiBold.ttf');
+    font-weight: 600;
+  }
   #app-content {
     flex: 1 0 auto;
     max-width: 1920px;

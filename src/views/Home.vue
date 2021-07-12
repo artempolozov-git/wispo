@@ -1,21 +1,27 @@
 <template>
   <div class="home">
-
+    <device-category></device-category>
+    <device-characteristics></device-characteristics>
   </div>
 </template>
 
 <script>
+    import DeviceCategory from "@/components/DeviceCategory";
+    import DeviceCharacteristics from "@/components/DeviceCharacteristics";
     export default {
-        name: "Home"
+        name: "Home",
+        components: {DeviceCharacteristics, DeviceCategory},
     }
 </script>
 
 <style scoped>
 .home {
-  height: 100vh;
-  background-color: red;
+  background-color: white;
   max-width: 1520px;
-  margin: auto;
-  margin-top: 15px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  margin: 30px auto 50px;
+  border-radius: 10px;
+  box-shadow: 0px 12px 10px -2px rgba(230, 230, 230, 0.8);
 }
 </style>

@@ -3,6 +3,7 @@
     <header-navigation></header-navigation>
     <header-panel></header-panel>
     <header-catalog></header-catalog>
+    <bread-crumbs></bread-crumbs>
   </div>
 </template>
 
@@ -10,9 +11,10 @@
     import HeaderNavigation from "@/components/HeaderNavigation";
     import HeaderPanel from "@/components/HeaderPanel";
     import HeaderCatalog from "@/components/HeaderCatalog";
+    import BreadCrumbs from "@/components/BreadCrumbs";
     export default {
         name: "Header",
-        components: {HeaderCatalog, HeaderPanel, HeaderNavigation}
+        components: {BreadCrumbs, HeaderCatalog, HeaderPanel, HeaderNavigation}
     }
 </script>
 

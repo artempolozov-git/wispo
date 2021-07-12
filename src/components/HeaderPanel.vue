@@ -3,25 +3,25 @@
     <div class="logotype"><img src="@/assets/icons/logotype.svg"></div>
     <div class="search">
       <input class="search-input" type="text" placeholder="Искать технику">
-      <button class="search-button" type="button"><img class="search-icon" src="@/assets/icons/search-icon.svg">Найти</button> <!--Можно добавить кнопку в инпут с помощью абсолютного позиционирования, но я сделал это с помощью стилей-->
+      <a class="search-button" href="#"><img class="search-icon" src="@/assets/icons/search-icon.svg">Найти</a> <!--Можно добавить кнопку в инпут с помощью абсолютного позиционирования, но я сделал это с помощью стилей-->
     </div>
     <div class="control-panel">
-      <div class="control-button">
+      <a class="panel-button" href="#">
         <div class="control-icon"><img src="@/assets/icons/comparison.svg"></div>
         <span>Сравнение</span>
-      </div>
-      <div class="control-button">
+      </a>
+      <a class="panel-button" href="#">
         <div class="control-icon"><img src="@/assets/icons/favorites.svg"></div>
-        <span>Избранное</span>
-      </div>
-      <div class="control-button">
+        <span >Избранное</span>
+      </a>
+      <a class="panel-button" href="#">
         <div class="control-icon"><img src="@/assets/icons/cabinet.svg"></div>
         <span>Мой кабинет</span>
-      </div>
-      <div class="control-button">
+      </a>
+      <a class="panel-button" href="#">
         <div class="control-icon"><img src="@/assets/icons/basket.svg"></div>
         <span>Корзина</span>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -70,8 +70,7 @@
   font-size: 14px;
   padding: 25px 40px 25px 0;
   border-radius: 0 5px 5px 0;
-  border: none;
-  outline: none;
+  text-decoration: none;
   background-color: #F6F6F6;
   color: #9A9A9A;
   cursor: pointer;
@@ -84,8 +83,10 @@
   display: flex;
   align-items: flex-end;
 }
-.control-button {
+.panel-button {
   margin-left: 45px;
+  text-decoration: none;
+  color: #000000;
   cursor: pointer;
 }
 .control-icon {

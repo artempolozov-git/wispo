@@ -1,15 +1,20 @@
 <template>
   <div class="header-navigation">
-    <div class="select-city">
-      <div class="icon"><img src="@/assets/icons/location.svg"></div>
-      <select class="list" name="Город:">
-        <option value="Челябинск">Челябинск</option> <!--Чтобы покрасить стрелочку в зеленый цвет, нашел способ заменить её через свойство background-->
-      </select>
+    <div class="dropdown">
+      <a class="dropdown-button" href="#">
+        <div class="icon"><img src="@/assets/icons/location.svg"></div>
+        <span class="city-title">Челябинск</span>
+        <div class="dropdown-icon"><img src="@/assets/icons/dropdown-arrow.svg"></div>
+      </a>
+      <div class="dropdown-content">
+        <a href="#">Москва</a>
+        <a href="#">Воронеж</a>
+      </div>
     </div>
     <div class="nav-address">
       <nav>Адреса</nav>
     </div>
-    <div class="rating"><img src="@/assets/icons/rating.svg"></div> <!--Можно сделать облачко с помощью css свойст, но пришлось бы возиться с абсолютным позиционированием, псевдоклассами и вычеслениями, но это увеличивает код и может привести к тому, что блок съедет -->
+    <div class="rating"><img src="@/assets/icons/rating.svg"></div>
     <div class="nav-links">
       <nav class="navigation">Как купить</nav>
       <nav class="navigation">О нас</nav>
@@ -41,27 +46,21 @@
 .header-navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
   box-sizing: border-box;
   max-width: 1520px;
   padding: 22px 0 22px 0;
   margin: auto;
   height: 76px;
 }
-.select-city {
-  display: flex;
-  align-items: center;
-}
 .icon {
   width: 15px;
   margin-right: 10px;
 }
-.list {
+.city-title {
   font-family: Montserrat;
   font-weight: 600;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  font-size: 14px;
+  margin: 0 10px;
 }
 .nav-address {
   font-weight: 400;
@@ -71,6 +70,7 @@
 }
 .rating {
   width: 220px;
+  cursor: pointer;
 }
 .nav-links {
   display: flex;
@@ -84,7 +84,7 @@
   cursor: pointer;
 }
 .time-works {
-  margin-left: 120px;
+  margin-left: 100px;
   font-weight: 500;
   color: #9A9A9A;
 }
@@ -127,6 +127,46 @@
   padding: 0 20px 0 20px;
   border-left: 2px solid #e6e6e6;
   border-right: 2px solid #e6e6e6;
+  cursor: pointer;
+}
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  color: #000000;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  width: 100%;
+  box-shadow: 0px 5px 18px 2px rgba(230, 230, 230, 0.6);
+  z-index: 1;
+}
+.dropdown-content a {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f3f3f3;
+  padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-button {
   cursor: pointer;
 }
 </style>

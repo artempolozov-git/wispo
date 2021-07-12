@@ -33,15 +33,55 @@
           </div>
         </div>
         <div class="navigations-main-block">
-          <div class="catalog-nav">
-            <div class="catalog-title">Каталог</div>
-            <div class="catalog-links" ><a href="#">Смартфоны</a></div>
-            <div class="catalog-links" ><a href="#">Планшеты и компьюетры</a></div>
-            <div class="catalog-links" ><a href="#">Умные часы и браслеты</a></div>
-            <div class="catalog-links" ><a href="#">Гаджеты</a></div>
-            <div class="catalog-links" ><a href="#">Аудиотехника</a></div>
-            <div class="catalog-links" ><a href="#">Другое</a></div>
-            <div class="catalog-links" ><a href="#">Топ гаджеты</a></div>
+          <div class="navigation-menu">
+            <div class="navigation-title">Каталог</div>
+            <div class="navigation-link"><a href="#">Смартфоны</a></div>
+            <div class="navigation-link"><a href="#">Планшеты и компьюетры</a></div>
+            <div class="navigation-link"><a href="#">Умные часы и браслеты</a></div>
+            <div class="navigation-link"><a href="#">Гаджеты</a></div>
+            <div class="navigation-link"><a href="#">Аудиотехника</a></div>
+            <div class="navigation-link"><a href="#">Другое</a></div>
+            <div class="navigation-link"><a href="#">Топ гаджеты</a></div>
+          </div>
+          <div class="navigation-menu">
+            <div class="navigation-title">Информация</div>
+            <div class="navigation-link"><a href="#">О нас</a></div>
+            <div class="navigation-link"><a href="#">Как купить</a></div>
+            <div class="navigation-link"><a href="#">Акции</a></div>
+            <div class="navigation-link"><a href="#">Контакты</a></div>
+          </div>
+          <div class="navigation-menu">
+            <div class="navigation-title">Мы на связи</div>
+            <div class="feedback-link">
+              <img src="@/assets/icons/dzen.svg">
+              <a href="#">Яндекс.Дзен</a>
+            </div>
+            <div class="feedback-link">
+              <img src="@/assets/icons/service-icon.svg">
+              <a href="#">Белый Сервис</a>
+            </div>
+            <div class="messengers-links">
+              <a href="#" style="margin-right: 10px"><img src="@/assets/icons/insta-icon.svg"></a>
+              <a href="#"><img src="@/assets/icons/vk-icon.svg"></a>
+            </div>
+          </div>
+          <div class="navigation-menu">
+            <div class="navigation-title">Адреса</div>
+            <div class="location-link">
+              <img src="@/assets/icons/location.svg">
+              <span>Энгельса, д. 75</span>
+            </div>
+            <div class="location-link">
+              <img src="@/assets/icons/location.svg">
+              <span>Энгельса, д. 30</span>
+            </div>
+            <div class="location-link" style="border: none">
+              <img src="@/assets/icons/location.svg">
+              <span>Ун. Набережная, д. 80</span>
+            </div>
+            <div>
+              <a class="location-button" href="#">На карте</a>
+            </div>
           </div>
         </div>
       </div>
@@ -149,16 +189,71 @@
   cursor: pointer;
 }
 .navigations-main-block {
-
+  display: flex;
 }
-.catalog-title {
+.navigation-menu {
+  margin-right: 100px;
+}
+.navigation-title {
   font-weight: 600;
   margin-bottom: 40px;
 }
-.catalog-links {
+.navigation-link {
   margin-top: 20px;
 }
-.catalog-links > a {
+.navigation-link > a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.feedback-link {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  border-bottom: 2px solid #e6e6e6;
+}
+.feedback-link > img {
+  width: 30px;
+  margin-right: 10px;
+}
+.feedback-link > a {
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.messengers-links {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.location-link {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  border-bottom: 2px solid #e6e6e6;
+}
+.location-link > img {
+  width: 15px;
+  margin-right: 10px;
+}
+.location-link > span {
+  font-weight: 600;
+}
+.location-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 15px 20px 15px 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #F6F6F6;
   color: #000000;
   text-decoration: none;
   cursor: pointer;

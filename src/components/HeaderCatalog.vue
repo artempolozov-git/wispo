@@ -2,6 +2,24 @@
   <div class="header-catalog">
     <div class="catalog-container">
       <div class="catalog-icon"><img src="@/assets/icons/catalog.svg"></div>
+      <div class="dropdown-catalog">
+        <div class="dropdown-button">
+          <span class="dropdown-title">Каталог</span>
+          <div class="dropdown-icon"><img src="@/assets/icons/dropdown-arrow.svg"></div>
+        </div>
+        <div class="dropdown-content">
+          <a href="#">Смартфоны</a>
+          <a href="#">Планшеты и ПК</a>
+          <a href="#">Умные устройства</a>
+          <a href="#">Гаджеты</a>
+          <a href="#">Аудиотехника</a>
+          <a href="#">Другое</a>
+        </div>
+      </div>
+      <div class="search">
+        <input class="search-input" type="text" placeholder="Искать технику">
+        <a class="search-button" href="#"><img class="search-icon" src="@/assets/icons/search-icon.svg"><span>Найти</span></a> <!--Можно добавить кнопку в инпут с помощью абсолютного позиционирования, но я сделал это с помощью стилей-->
+      </div>
       <div class="catalog-navigation">
         <div class="dropdown">
           <div class="dropdown-button">
@@ -51,7 +69,7 @@
             <a href="#">Мышки</a>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" id="audio">
           <div class="dropdown-button">
             <div class="icon"><img src="@/assets/icons/audio.svg"></div>
             <span class="list-title">Аудиотехника</span>
@@ -142,6 +160,10 @@
   display: inline-block;
   margin-left: 45px;
 }
+.dropdown-catalog {
+  position: relative;
+  display: none;
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -170,5 +192,133 @@
 }
 .dropdown:hover .dropdown-button {
   cursor: pointer;
+}
+.search {
+  display: none;
+  align-items: center;
+}
+.search-input {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  width: 420px;
+  margin-left: 30px;
+  padding: 25px 10px 25px 40px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+  background-color: #F6F6F6;
+}
+.search-button {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 25px 40px 25px 0;
+  border-radius: 0 5px 5px 0;
+  text-decoration: none;
+  background-color: #F6F6F6;
+  color: #9A9A9A;
+  cursor: pointer;
+}
+.search-icon {
+  width: 15px;
+  margin-right: 18px;
+}
+@media only screen and (max-width : 1536px) {
+  .catalog-container {
+    max-width: 1080px;
+  }
+  #audio {
+    display: none;
+  }
+  .catalog-icon {
+    padding-right: 20px;
+  }
+  .dropdown {
+    margin-left: 20px;
+  }
+  .icon {
+    width: 15px;
+  }
+}
+@media only screen and (max-width : 980px) {
+  .catalog-container {
+    max-width: 850px;
+  }
+  .catalog-navigation {
+    display: none;
+  }
+  .catalog-icon {
+    border: none;
+  }
+  .dropdown-button {
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .dropdown-icon {
+    margin-left: 10px;
+  }
+  .dropdown-catalog {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-catalog:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-catalog:hover .dropdown-button {
+    cursor: pointer;
+  }
+  .dropdown-content {
+    width: 180px;
+  }
+  .search {
+    display: flex;
+  }
+  .search-input {
+    padding: 15px 10px 15px 20px;
+    width: 345px;
+  }
+  .search-button {
+    padding: 15px 40px 15px 0;
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .catalog-container {
+    max-width: 650px;
+  }
+  .search-input {
+    width: 215px;
+  }
+  .search-button {
+    padding: 15px 20px 15px 0;
+  }
+  .search-button > span {
+    display: none;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .catalog-container {
+    max-width: 320px;
+    justify-content: center;
+  }
+  .service-button {
+    display: none;
+  }
+  .search-input {
+    width: 120px;
+    margin-left: 10px;
+  }
+  .search-button {
+    margin: 0;
+  }
+  .search-icon {
+    margin: 0;
+  }
+  .catalog-icon {
+    padding-right: 10px;
+  }
 }
 </style>

@@ -156,12 +156,12 @@
       <span>Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A) и Смартфон Apple iPhone SE 2020 128GB Black (MXD02RU/A) - сравнение основных характеристик моделей</span>
     </div>
     <div class="control-buttons">
-      <a class="clear-list-button" href="#">Очистить список</a>
+      <a class="clear-list-button" href="#"><span>Очистить список</span></a>
       <a class="back-products-button" href="#">
         <img src="@/assets/icons/back-icon.svg">
         <span>Назад к товарам</span>
       </a>
-    </div>
+  </div>
   </div>
 </template>
 
@@ -262,6 +262,9 @@
   justify-content: center;
 }
 .clear-list-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: Montserrat;
   font-weight: 500;
   font-size: 16px;
@@ -291,5 +294,107 @@
 }
 .back-products-button > span {
   margin-left: 10px;
+}
+@media only screen and (max-width : 1536px) {
+  .title {
+    width: 30%;
+  }
+  .deployed-name {
+    width: 30%;
+  }
+  .first-device-bonus {
+    width: 25%;
+  }
+  .first-device-characteristics {
+    width: 25%;
+  }
+  .characteristics-description {
+    width: 90%;
+  }
+}
+@media only screen and (max-width : 980px) {
+  .characteristics-description {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .title {
+    font-size: 14px;
+    margin-right: 25px;
+  }
+  .deployed-title {
+    font-size: 14px;
+  }
+  .deployed-name {
+    font-size: 12px;
+    margin: 0 10px 0 10px;
+  }
+  .first-device-bonus {
+    margin-right: 90px;
+  }
+  .first-device-characteristics {
+    margin-right: 60px;
+    font-size: 12px;
+    width: 30%;
+  }
+  .second-device-characteristics {
+    font-size: 12px;
+  }
+  .first-device-bonus > span {
+    font-size: 12px;
+  }
+  .second-device-bonus > span {
+    font-size: 12px;
+  }
+  .characteristics-description {
+    font-size: 16px;
+  }
+  .questions-icon {
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .title {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  .deployed-title {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  .first-device-bonus, .second-device-bonus {
+    display: none;
+  }
+  .first-device-characteristics, .second-device-characteristics {
+    display: none;
+  }
+  .deployed-name {
+    display: none;
+  }
+  .deployed-wrapper {
+    display: none;
+    margin: 0;
+  }
+  .characteristics-description {
+    font-size: 12px;
+  }
+  .control-buttons {
+    display: block;
+  }
+  .clear-list-button {
+    margin-right: 0;
+  }
+  .back-products-button {
+    margin-top: 20px;
+  }
 }
 </style>

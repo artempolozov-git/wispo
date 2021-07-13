@@ -1,11 +1,11 @@
 <template>
   <div class="header-navigation">
     <div class="dropdown">
-      <a class="dropdown-button" href="#">
+      <div class="dropdown-button">
         <div class="icon"><img src="@/assets/icons/location.svg"></div>
-        <span class="city-title">Челябинск</span>
+        <span class="dropdown-title">Челябинск</span>
         <div class="dropdown-icon"><img src="@/assets/icons/dropdown-arrow.svg"></div>
-      </a>
+      </div>
       <div class="dropdown-content">
         <a href="#">Москва</a>
         <a href="#">Воронеж</a>
@@ -15,6 +15,18 @@
       <nav>Адреса</nav>
     </div>
     <div class="rating"><img src="@/assets/icons/rating.svg"></div>
+    <div class="dropdown-information">
+      <div class="dropdown-button" href="#">
+        <span class="dropdown-title">Информация</span>
+        <div class="dropdown-icon"><img src="@/assets/icons/dropdown-arrow.svg"></div>
+      </div>
+      <div class="dropdown-content">
+        <a href="#">Как купить</a>
+        <a href="#">О нас</a>
+        <a href="#">Акции</a>
+        <a href="#">Контакты</a>
+      </div>
+    </div>
     <div class="nav-links">
       <nav class="navigation">Как купить</nav>
       <nav class="navigation">О нас</nav>
@@ -56,7 +68,7 @@
   width: 15px;
   margin-right: 10px;
 }
-.city-title {
+.dropdown-title {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 14px;
@@ -140,6 +152,10 @@
   position: relative;
   display: inline-block;
 }
+.dropdown-information {
+  position: relative;
+  display: none;
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -168,5 +184,72 @@
 }
 .dropdown:hover .dropdown-button {
   cursor: pointer;
+}
+@media only screen and (max-width : 1536px) {
+  .header-navigation {
+    max-width: 1080px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-address {
+    display: none;
+  }
+  .wa-msg, .tg-msg, .viber-msg {
+    padding: 0 10px 0 10px;
+  }
+  .dropdown-information {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-information:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-information:hover .dropdown-button {
+    cursor: pointer;
+  }
+  .rating {
+    margin: 0 20px 0 20px;
+  }
+  .time-works {
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width : 980px) {
+  .header-navigation {
+    max-width: 850px;
+  }
+  .time-works {
+    display: none;
+  }
+  .messengers-contacts {
+    display: none;
+  }
+  .phone-contact {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .header-navigation {
+    max-width: 650px;
+  }
+  .rating {
+    display: none;
+  }
+  .dropdown-information {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .header-navigation {
+    max-width: 320px;
+  }
+  .phone-contact {
+    display: none;
+  }
+  .header-navigation {
+    justify-content: center;
+  }
 }
 </style>

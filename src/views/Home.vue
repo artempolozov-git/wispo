@@ -24,4 +24,24 @@
   border-radius: 10px;
   box-shadow: 0px 12px 10px -2px rgba(230, 230, 230, 0.8);
 }
+@media only screen and (max-width : 1536px) {
+  .home {
+    max-width: 1080px;
+  }
+}
+@media only screen and (max-width : 980px) {
+  .home {
+    max-width: 850px;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .home {
+    max-width: 650px;
+  }
+}
+@media only screen and (max-width : 701px) {
+  .home  {
+    max-width: 320px;
+  }
+}
 </style>

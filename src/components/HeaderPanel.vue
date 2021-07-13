@@ -3,16 +3,16 @@
     <div class="logotype"><img src="@/assets/icons/logotype.svg"></div>
     <div class="search">
       <input class="search-input" type="text" placeholder="Искать технику">
-      <a class="search-button" href="#"><img class="search-icon" src="@/assets/icons/search-icon.svg">Найти</a> <!--Можно добавить кнопку в инпут с помощью абсолютного позиционирования, но я сделал это с помощью стилей-->
+      <a class="search-button" href="#"><img class="search-icon" src="@/assets/icons/search-icon.svg"><span>Найти</span></a> <!--Можно добавить кнопку в инпут с помощью абсолютного позиционирования, но я сделал это с помощью стилей-->
     </div>
     <div class="control-panel">
-      <a class="panel-button" href="#">
+      <a class="panel-button" href="#" id="comparison">
         <div class="control-icon"><img src="@/assets/icons/comparison.svg"></div>
         <span>Сравнение</span>
       </a>
-      <a class="panel-button" href="#">
+      <a class="panel-button" href="#" id="favorites">
         <div class="control-icon"><img src="@/assets/icons/favorites.svg"></div>
-        <span >Избранное</span>
+        <span>Избранное</span>
       </a>
       <a class="panel-button" href="#">
         <div class="control-icon"><img src="@/assets/icons/cabinet.svg"></div>
@@ -92,5 +92,63 @@
 .control-icon {
   width: 20px;
   margin: auto;
+}
+@media only screen and (max-width : 1536px) {
+  .header-panel {
+    max-width: 1080px;
+  }
+  .search-button > span {
+    display: none;
+  }
+  .logotype {
+    width: 300px;
+  }
+  .search-input {
+    width: 150px;
+    padding: 25px 10px 25px 20px;
+  }
+  .search-button {
+    padding: 25px 20px 25px 0;
+  }
+  .search-icon {
+    margin: 0;
+  }
+  .panel-button {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width : 980px) {
+  .header-panel {
+    max-width: 850px;
+  }
+  .search {
+    display: none;
+  }
+  .control-panel {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .header-panel {
+    max-width: 650px;
+  }
+  #comparison, #favorites {
+    display: none;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .header-panel {
+    max-width: 320px;
+    justify-content: center;
+  }
+  .panel-button > span{
+    display: none;
+  }
+  .logotype {
+    width: 180px;
+  }
+  .control-panel {
+    margin: 0;
+  }
 }
 </style>

@@ -34,4 +34,35 @@
   margin-bottom: 0;
   font-size: 32px;
 }
+@media only screen and (max-width : 1536px) {
+  .crumbs-container {
+    max-width: 1080px;
+  }
+}
+@media only screen and (max-width : 980px) {
+  .crumbs-container {
+    max-width: 850px;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .crumbs-container {
+    max-width: 650px;
+  }
+  .bread-title {
+    font-size: 30px;
+  }
+  .bread-crumbs {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .crumbs-container {
+    max-width: 320px;
+    padding: 40px 20px 40px 20px;
+  }
+  .bread-title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
 </style>

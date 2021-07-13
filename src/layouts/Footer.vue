@@ -65,7 +65,7 @@
               <a href="#"><img src="@/assets/icons/vk-icon.svg"></a>
             </div>
           </div>
-          <div class="navigation-menu">
+          <div class="navigation-menu" style="margin: 0">
             <div class="navigation-title">Адреса</div>
             <div class="location-link">
               <img src="@/assets/icons/location.svg">
@@ -77,7 +77,7 @@
             </div>
             <div class="location-link" style="border: none">
               <img src="@/assets/icons/location.svg">
-              <span>Ун. Набережная, д. 80</span>
+              <span>Ул. Набережная, д. 80</span>
             </div>
             <div>
               <a class="location-button" href="#">На карте</a>
@@ -257,5 +257,73 @@
   color: #000000;
   text-decoration: none;
   cursor: pointer;
+}
+@media only screen and (max-width : 1536px) {
+  .footer-main-container {
+    max-width: 1080px;
+  }
+  .payment-systems > img {
+    width: 100%;
+  }
+  .company-info-block {
+    margin-right: 60px;
+  }
+  .navigation-menu {
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width : 980px) {
+  .footer-main-container {
+    max-width: 850px;
+  }
+  .company-info-block {
+    display: none;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .footer-main-container  {
+    max-width: 650px;
+    padding: 60px 0 150px 0;
+  }
+  .number {
+    font-size: 25px;
+  }
+  .order-button > span {
+    font-size: 12px;
+  }
+  .time-works {
+    font-size: 12px;
+  }
+  .wa-icon, .tg-icon {
+    margin-left: 10px;
+  }
+  .navigation-menu {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .footer-main-container {
+    max-width: 320px;
+    padding: 60px 0 60px 0;
+  }
+  .navigations-main-block {
+    display: none;
+  }
+  .company-contacts-block {
+    display: block;
+  }
+  .number-phone {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  .contacts-navigations-container {
+    margin: auto;
+  }
+  .callback-button {
+    margin-bottom: 20px;
+  }
+  .feedback-messengers {
+    margin: 0;
+  }
 }
 </style>

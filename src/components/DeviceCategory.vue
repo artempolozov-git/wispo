@@ -137,7 +137,7 @@
 }
 .device-images-second {
   width: 120px;
-  height: auto;
+  height: 150px;
   margin-right: 30px;
   background: url(../assets/images/xiaomi.png);
   background-size: cover;
@@ -192,5 +192,78 @@
 .buy-one-click > span {
   font-weight: 600;
   margin-left: 10px;
+}
+@media only screen and (max-width : 1536px) {
+  .compare-block {
+    display: block;
+  }
+  .selected-second-devices {
+    margin-left: 100px;
+  }
+  .device-info {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width : 980px) {
+  .categories-panel {
+    margin-right: 20px;
+  }
+  .buy-controls {
+    display: block;
+    margin-top: 30px;
+  }
+  .buy-one-click {
+    margin: 0;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .for-categories {
+    font-size: 12px;
+  }
+  .list {
+    width: 180px;
+    padding: 15px 16px;
+    font-size: 10px;
+  }
+  .choose-parameters {
+    font-size: 12px;
+  }
+  .selected-second-devices {
+    margin-left: 60px;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .categories-container {
+    display: block;
+  }
+  .device-images-first {
+    margin: auto;
+  }
+  .category-title {
+    text-align: center;
+  }
+  .device-name {
+    text-align: center;
+    font-size: 14px;
+  }
+  .price {
+    font-size: 16px;
+    text-align: center;
+  }
+  .buy-one-click {
+    display: none;
+  }
+  .buy-controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+  }
+  .selected-second-devices {
+    margin: 0;
+  }
+  .device-images-second {
+    margin: auto;
+  }
 }
 </style>

@@ -136,7 +136,7 @@
     display: none;
   }
 }
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 533px) {
   .header-panel {
     max-width: 320px;
     justify-content: center;

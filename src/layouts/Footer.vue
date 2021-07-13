@@ -301,7 +301,7 @@
     margin-right: 40px;
   }
 }
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 533px) {
   .footer-main-container {
     max-width: 320px;
     padding: 60px 0 60px 0;

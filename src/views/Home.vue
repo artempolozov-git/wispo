@@ -39,7 +39,7 @@
     max-width: 650px;
   }
 }
-@media only screen and (max-width : 701px) {
+@media only screen and (max-width : 533px) {
   .home  {
     max-width: 320px;
   }

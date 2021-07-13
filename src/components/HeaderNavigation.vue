@@ -241,7 +241,7 @@
     margin-left: 20px;
   }
 }
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 533px) {
   .header-navigation {
     max-width: 320px;
   }

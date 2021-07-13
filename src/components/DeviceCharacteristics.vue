@@ -354,7 +354,7 @@
     margin-left: 5px;
   }
 }
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 533px) {
   .title {
     width: 100%;
     text-align: center;

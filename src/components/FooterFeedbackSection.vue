@@ -129,7 +129,7 @@
     font-size: 12px;
   }
 }
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 533px) {
   .feedback-main-container {
     max-width: 320px;
     padding: 25px 20px 25px 20px;

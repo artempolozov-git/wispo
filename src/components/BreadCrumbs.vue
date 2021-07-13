@@ -55,7 +55,7 @@
     font-size: 12px;
   }
 }
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 533px) {
   .crumbs-container {
     max-width: 320px;
     padding: 40px 20px 40px 20px;
